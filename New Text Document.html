@@ -13,6 +13,10 @@
 <h2>Facts:</h2>
 <p>Este es mi primer documento en HTML, sin hacerlo como parte de una tarea</p>
 
+<p id="Full Stack Developer" onMouseOver="expand();">I love coding and I am improving my skills everyday by constantly learning and 
+    pushing myself! One day I will be a Full Stack Developer!
+</p>
+
 
 <!-- ESTE ES UN BOTON-->
 <input type="button" value="Click" onClick="alert('Where are you going? Dont leave me!!!');"> 
@@ -27,8 +31,11 @@
 <a href="JavaScript:void(0)" onMouseOver="this.style.color='green';" onClick="alert('Hi');">Click on This</a>
 
 
-<!-- El siguiente codigo reacciona al evento onMouseOver-->
-<img src="photos/Kechew.jpg" onMouseOver="src='photos/Kachow.jpg'" >
+<!-- El siguiente codigo reacciona al evento onMouseOver y cuando tu ya no tienes tu mouse
+encima de la imagen entonces revierte a la vieja imagen de Kechew-->
+<img src="photos/Kechew.jpg"
+onMouseOver="src='photos/Kachow.jpg'" 
+onMouseOut="src='photos/Kechew.jpg'">
 
 
 <script src="jokkingName.js"></script>
