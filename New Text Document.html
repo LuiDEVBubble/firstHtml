@@ -5,7 +5,8 @@
     <title>Luis es Legal!!!</title>
 </head>
 
-<h1>HOLA</h1>
+<!--En el codigo que sigue, estoy usando en event handler para que aparesca algo cuando el usuario hovers sobre mi h1-->
+<h1 onMouseOver="alert('Or Hello in English');"> HOLA</h1>
 
 <body>
     
@@ -22,11 +23,12 @@
 
 
 <!-- EL SIGUIENTE CODIGO ES UN LINK QUE REACCIONA CUANDO LO PRESIONAS-->
-<a href="JavaScript:void(0)" onClick="alert('Hi');">Click on This</a>
+<!--OnMouseOver hace que el link se vuelva verde cuando tu lo pasas por encima-->
+<a href="JavaScript:void(0)" onMouseOver="this.style.color='green';" onClick="alert('Hi');">Click on This</a>
 
 
 <!-- El siguiente codigo reacciona al evento onMouseOver-->
-<img src="photos/Kechew.jpg" onmouseover="src='photos/Kachow.jpg'" >
+<img src="photos/Kechew.jpg" onMouseOver="src='photos/Kachow.jpg'" >
 
 
 <script src="jokkingName.js"></script>
