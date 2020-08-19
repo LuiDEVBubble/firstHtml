@@ -9,3 +9,25 @@ checkAddress = (fieldId) =>
     }
 
 }
+
+fillCity = () => 
+{
+    let cityName;
+    let zipEntered = document.getElementById("zip").value;
+
+    switch(zipEntered)
+    {
+        case "60608":
+            cityName = "Chicago";
+            break;
+        
+        case "68114":
+            cityName = "Ohoma";
+            break;
+        case "27704":
+            cityName = "Durham";
+            break;
+    }
+
+    document.getElementById("city").value = cityName;
+}
