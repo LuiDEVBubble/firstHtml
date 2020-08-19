@@ -1,9 +1,11 @@
-let userName = prompt("What is your name?");
+//Esta funcion me ayuda a ver si la respuesta del usuario es blank.
+checkAddress = (fieldId) =>
+{
+    let id = document.getElementById(fieldId).value;
 
+    if (id === "")
+    {
+        alert("email is required.");
+    }
 
-let currentAge = prompt("What is your age?");
-let age = parseInt(currentAge); // parseInt is the function that is used to convert strings into integers
-
-alert("Hi " + userName + " I didn't know you were " + (age + 40) + " years old!");
-alert("Just kidding! I know you're " + age);
-
+}
