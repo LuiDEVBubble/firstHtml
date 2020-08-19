@@ -33,9 +33,22 @@
 
 <!-- El siguiente codigo reacciona al evento onMouseOver y cuando tu ya no tienes tu mouse
 encima de la imagen entonces revierte a la vieja imagen de Kechew-->
-<img src="photos/Kechew.jpg"
+<img src="photos/Kechew.jpg" 
 onMouseOver="src='photos/Kachow.jpg'" 
 onMouseOut="src='photos/Kechew.jpg'">
+
+
+<!--El siguiente codigo es un field donde el usuario puede escribir lo que sea, pero despues 
+de que el usuario le de un click al field, el field se convertira amarillo-->
+<!--Cuando el usuario presiona en el field, "onFocus" hace que algo suceda cuando 
+ese field es el "Focus".
+Cuando el usuario presiona fuera del field, "onBlur" hace que algo suceda cuando 
+ese field ya no es el focus sino el "BLur"-->
+<input type="text" size="50" 
+onFocus="this.style.backgroundColor='yellow'; "
+onBlur="this.style.backgroundColor='white';"
+>
+
 
 
 <script src="jokkingName.js"></script>
