@@ -5,14 +5,63 @@
     <title>Luis es Legal!!!</title>
 </head>
 
-<h1>HOLA</h1>
+<!--En el codigo que sigue, estoy usando en event handler para que aparesca algo cuando el usuario hovers sobre mi h1-->
+<h1 onMouseOver="alert('Or Hello in English');"> HOLA</h1>
 
 <body>
     
 <h2>Facts:</h2>
 <p>Este es mi primer documento en HTML, sin hacerlo como parte de una tarea</p>
 
-<script src="jokkingName.js"></script>
+<p id="Full Stack Developer" onMouseOver="expand();">I love coding and I am improving my skills everyday by constantly learning and 
+    pushing myself! One day I will be a Full Stack Developer!
+</p>
+
+
+<!-- ESTE ES UN BOTON-->
+<input type="button" value="Click" onClick="alert('Where are you going? Dont leave me!!!');"> 
+
+
+<!-- ESTE ES UNA IMAGEN QUE REACCIONA CUANDO LE PRESIONAS-->
+<img src="photos/happyFeet.jpg" onClick="alert('This photo is a picture of Happy Feet!');">
+
+
+<!-- EL SIGUIENTE CODIGO ES UN LINK QUE REACCIONA CUANDO LO PRESIONAS-->
+<!--OnMouseOver hace que el link se vuelva verde cuando tu lo pasas por encima-->
+<a href="JavaScript:void(0)" onMouseOver="this.style.color='green';" onClick="alert('Hi');">Click on This</a>
+
+
+<!-- El siguiente codigo reacciona al evento onMouseOver y cuando tu ya no tienes tu mouse
+encima de la imagen entonces revierte a la vieja imagen de Kechew-->
+<img src="photos/Kechew.jpg" width="500" height="500"
+onMouseOver="src='photos/Kachow.jpg'" 
+onMouseOut="src='photos/Kechew.jpg'">
+
+
+<!--El siguiente codigo es un field donde el usuario puede escribir lo que sea, pero despues 
+de que el usuario le de un click al field, el field se convertira amarillo-->
+<!--Cuando el usuario presiona en el field, "onFocus" hace que algo suceda cuando 
+ese field es el "Focus".
+Cuando el usuario presiona fuera del field, "onBlur" hace que algo suceda cuando 
+ese field ya no es el focus sino el "BLur"-->
+<br /> <br />
+<input type="text" size="50" 
+onFocus="this.style.backgroundColor='yellow'; "
+onBlur="this.style.backgroundColor='white';"
+>
+
+<form onsubmit="checkAddress('email');">
+    Email: 
+    <input type="text" id="email">
+    <input type="submit" value="Submit Here">
+
+    Zip Code: <br />
+    <input type="text" id="zip" onBlur="fillCity();" > <br/>
+    City:<br />
+    <input type="text" id="city" >
+</form>
+
+ <script src="jokkingName.js"></script> 
 </body>
 
 
